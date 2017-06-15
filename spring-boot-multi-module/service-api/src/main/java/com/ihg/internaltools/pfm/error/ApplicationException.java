@@ -3,6 +3,9 @@
  */
 package com.ihg.internaltools.pfm.error;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * @author mv
  *
@@ -10,12 +13,14 @@ package com.ihg.internaltools.pfm.error;
 @SuppressWarnings("serial")
 public class ApplicationException extends RuntimeException {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(ApplicationException.class);
+
     /**
      * @param message
      */
     public ApplicationException(String message) {
         super(message);
-        // TODO Auto-generated constructor stub
+        LOGGER.error("Error : {}", message);
     }
 
     /**
@@ -24,7 +29,7 @@ public class ApplicationException extends RuntimeException {
      */
     public ApplicationException(String message, Throwable cause) {
         super(message, cause);
-        // TODO Auto-generated constructor stub
+        LOGGER.error("Error : {}", message);
     }
 
     /**
@@ -35,7 +40,7 @@ public class ApplicationException extends RuntimeException {
      */
     public ApplicationException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
-        // TODO Auto-generated constructor stub
+        LOGGER.error("Error : {}", message);
     }
 
     /**
@@ -43,7 +48,7 @@ public class ApplicationException extends RuntimeException {
      */
     public ApplicationException(Throwable cause) {
         super(cause);
-        // TODO Auto-generated constructor stub
+        LOGGER.error("Error : {}", cause.getMessage());
     }
 
 }
