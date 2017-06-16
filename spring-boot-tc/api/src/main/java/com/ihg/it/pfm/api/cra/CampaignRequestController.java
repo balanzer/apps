@@ -3,7 +3,6 @@
  */
 package com.ihg.it.pfm.api.cra;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -16,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ihg.it.pfm.cra.CampaignRequest;
 import com.ihg.it.pfm.services.CampaignRequestProcess;
 
 @RestController
@@ -29,14 +29,10 @@ public class CampaignRequestController {
 
     @SuppressWarnings("rawtypes")
     @RequestMapping(value = "/list", method = RequestMethod.GET)
-    public ResponseEntity<List<String>> list() {
+    public ResponseEntity<List<CampaignRequest>> list() {
         LOGGER.debug("get all records");
 
-        final List<String> results = new ArrayList<>();
-
-        results.add(this.campaignService.greetings(null));
-        results.add(this.campaignService.greetings("abc"));
-        results.add(this.campaignService.greetings("apple"));
+        final List<CampaignRequest> results = this.campaignService.getAll();
 
         if (results.isEmpty()) {
             return new ResponseEntity(HttpStatus.NO_CONTENT);

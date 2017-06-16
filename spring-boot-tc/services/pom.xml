@@ -17,7 +17,12 @@
 
 
 	<dependencies>
-
+		<!-- Project modules -->
+		<dependency>
+			<groupId>com.ihg.it.pfm</groupId>
+			<artifactId>com.ihg.it.pfm.domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 	</dependencies>
 
 
