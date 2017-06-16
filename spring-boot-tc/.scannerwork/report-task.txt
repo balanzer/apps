@@ -1,0 +1,5 @@
+projectKey=PFM:Internaltools
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/PFM:Internaltools
+ceTaskId=AVyx-kBFUgTU--rrCgKg
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVyx-kBFUgTU--rrCgKg
