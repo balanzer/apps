@@ -1,12 +1,12 @@
 # PFM Internaltools
 
-Maven Compile
+## Maven Compile
 
-mvn clean install
-mvn clean install -DskipTests (to skip unit tests)
+1. mvn clean install
+2. mvn clean install -DskipTests (to skip unit tests)
 
 
-Running Sonar 
+## Running Sonar 
 
 Install Sonar   - https://docs.sonarqube.org/display/HOME/SonarQube+Platform
 
