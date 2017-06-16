@@ -1,12 +1,12 @@
-package com.ihg.it.pfm;
+package com.ihg.it.pfm.serviceimpl;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DomainApplication {
+public class ServiceImplApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DomainApplication.class, args);
+		SpringApplication.run(ServiceImplApplication.class, args);
 	}
 }

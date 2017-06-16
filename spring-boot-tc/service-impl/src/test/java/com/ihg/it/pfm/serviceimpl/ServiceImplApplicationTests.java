@@ -1,4 +1,4 @@
-package com.ihg.it.pfm;
+package com.ihg.it.pfm.serviceimpl;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class DomainApplicationTests {
+public class ServiceImplApplicationTests {
 
 	@Test
 	public void contextLoads() {
