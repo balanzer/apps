@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>com.ihg.it.pfm.service.impl</artifactId>
+	<artifactId>com.ihg.it.pfm.services</artifactId>
 	<packaging>jar</packaging>
-	<name>Project Module - Service Implementation</name>
-	<description>Project Module - Service Implementation</description>
+	<name>Project Module - Services</name>
+	<description>Project Module - Services</description>
 
 	<parent>
 		<groupId>com.ihg.it.pfm</groupId>
@@ -15,19 +15,10 @@
 	</parent>
 
 
+
 	<dependencies>
-		<!-- Project modules -->
-		<dependency>
-			<groupId>com.ihg.it.pfm</groupId>
-			<artifactId>com.ihg.it.pfm.services</artifactId>
-			<version>${project.version}</version>
-		</dependency>
+
 	</dependencies>
 
 
-
 </project>
-
-
-
-

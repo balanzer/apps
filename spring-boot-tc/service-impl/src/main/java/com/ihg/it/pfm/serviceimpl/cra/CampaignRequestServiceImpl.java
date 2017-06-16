@@ -7,15 +7,18 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import com.ihg.it.pfm.services.CampaignRequestProcess;
+
 /**
  * @author varathm
  *
  */
 @Service
-public class CampaignRequestServiceImpl {
+public class CampaignRequestServiceImpl implements CampaignRequestProcess {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CampaignRequestServiceImpl.class);
 
+    @Override
     public String greetings(final String name) {
         LOGGER.debug("Service Invoked...");
         if ((null != name) && (name.trim().length() > 0)) {

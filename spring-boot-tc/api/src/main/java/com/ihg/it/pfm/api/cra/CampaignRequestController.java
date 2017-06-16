@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ihg.it.pfm.serviceimpl.cra.CampaignRequestServiceImpl;
+import com.ihg.it.pfm.services.CampaignRequestProcess;
 
 @RestController
 @RequestMapping(value = "/cra", name = "CampaignProcesController", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -25,7 +25,7 @@ public class CampaignRequestController {
     private static final Logger LOGGER = LoggerFactory.getLogger(CampaignRequestController.class);
 
     @Autowired
-    private CampaignRequestServiceImpl campaignService;
+    private CampaignRequestProcess campaignService;
 
     @SuppressWarnings("rawtypes")
     @RequestMapping(value = "/list", method = RequestMethod.GET)
