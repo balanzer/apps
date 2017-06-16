@@ -20,6 +20,7 @@
 	</parent>
 
 	<modules>
+	<module>domain</module>
 	<module>services</module>
 		<module>service-impl</module>
 		<module>api</module>
