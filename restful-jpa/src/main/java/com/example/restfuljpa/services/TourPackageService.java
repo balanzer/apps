@@ -7,12 +7,12 @@ import com.example.restfuljpa.domain.TourPackage;
 import com.example.restfuljpa.repo.TourPackageRepository;
 
 @Service
-public class TourPackageSerivice {
+public class TourPackageService {
 
     private final TourPackageRepository tourPackageRepository;
 
     @Autowired
-    public TourPackageSerivice(final TourPackageRepository tourPackageRepository) {
+    public TourPackageService(final TourPackageRepository tourPackageRepository) {
         this.tourPackageRepository = tourPackageRepository;
     }
 
