@@ -1,0 +1,5 @@
+
+ˆsquid:S2387"N"LOGGER" differs only by case from "logger" in "SpringBootServletInitializer".(ŠýžËùÿÿÿÿ8µÔ½óÊ+HyRBLOCKERZ
+CODE_SMELL
+åsquid:S1845"ªRename field "LOGGER" to prevent any misunderstanding/clash with field "logger" defined in superclass "org.springframework.boot.web.support.SpringBootServletInitializer".(ŠýžËùÿÿÿÿ8µÔ½óÊ+HxRBLOCKERZ
+CODE_SMELL
